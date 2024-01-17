@@ -84,6 +84,15 @@ console.log(i, arrayEmpty)
 
 ```js
 
+let someElements = ["Abdiqani", 3,4,{lastName:"Hashi"}]
+let searchElement = "Abdiqani"
+
+for (i = 0; i < someElements.length; i++)
+{
+    if(someElements[i] === searchElement){
+        print("I found:",searchElements)
+    }
+}
 
 ```
 
@@ -92,6 +101,15 @@ console.log(i, arrayEmpty)
 
 
 ```js
+let someNames = ["Abdiqani","Amal","Leila"]
+
+for (i = 0; i < someNames.length; i++)
+{
+    
+}
+
+
+
 
 
 ```
@@ -102,6 +120,17 @@ console.log(i, arrayEmpty)
  
 ```js
 
+let numbers = [43,67,100,3]
+
+let bigNumber = numbers[0]
+for (i = 1; i < numbers.length; i++)
+{
+    if (numbers[i] > bigNumber ){
+        bigNumber = numbers[i]
+    }
+}
+
+console.log(bigNumber)
 
 ```
 
@@ -110,6 +139,14 @@ console.log(i, arrayEmpty)
 
 ```js
 
+let copyFrom = [2,4,5,6,7,9]
+let copyTo = []
+
+for (i = 0; i < copyFrom.length; i++)
+{
+    copyTo[i] = copyFrom[i];
+}
+console.log("I have copied from", copyFrom,  "and copied to",  copyTo)
 
 ```
 
@@ -119,6 +156,11 @@ console.log(i, arrayEmpty)
 
 ```js
 
+let arrayToEmpty = [1, 2, 3, 4, 5];
+for (let i = 0; i < arrayToEmpty.length; i++) {
+    arrayToEmpty[i] = 0
+}
+console.log( "It will print it out zero 0",arrayToEmpty); 
 
 ```
 

@@ -1,9 +1,5 @@
-
-let randomNumbers = [4,10,30,2,1]
-
-sum = 0;
-for(i = 0; i < randomNumbers.length; i++)
-{
-   sum += randomNumbers[i]
+let arrayToEmpty = [1, 2, 3, 4, 5];
+for (let i = 0; i < arrayToEmpty.length; i++) {
+    arrayToEmpty[i] = 0
 }
- console.log("Total: ",sum)
+console.log( "zero",arrayToEmpty); 
