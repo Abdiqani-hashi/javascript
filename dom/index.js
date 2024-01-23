@@ -1,5 +1,2 @@
-function myfunction(){
-    const span = document.getElementById("myspan")
-    const h2 = document.getElementById("myh2")
-    h2.insertAdjacentElement("afterend", span)
-}
+let html  = document.getElementById("send").innerHTML;
+document.getElementById("get").innerHTML = html;

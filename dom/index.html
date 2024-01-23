@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="myfunction()">Move</button>
-    <p>Click "Move" to insert the red span after the header</p>
-    <span id="myspan">My span</span>
-    <h2 id="myh2">My header</h2>
+   <p id="send">Visited in Iceland last year</p>
+   <p>show here</p>
+   <p id="get"></p>
 
+    <script src="index.js">
 
-    <script src="index.js"></script>
+        let html  = document.getElementById("send").innerHTML;
+        document.getElementById("get").innerHTML = html;
+    </script>
 </body>
 </html>

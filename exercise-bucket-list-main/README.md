@@ -30,23 +30,41 @@ console.log(firstBucketListItem) //This will go after the p tag which is already
    Try them out!
 
 ```Js
-const item = document.createElement("p");
-item.innerText = `Visit to Japan.`
+   const item = document.createElement("p");
+   item.innerText = `Visit to Japan.`
 
-firstBucketListItem.insertAdjacentElement("afterend", item)
+   firstBucketListItem.insertAdjacentElement("afterend", item)
 ```
 
 3. `innerHTML` is an interesting property that exists on HTML elements. With that property we can get and set the inner HTML of a HTML element very easy. Try to get _(or do you already have it?)_ the inner HTML from the element that contains all the `<p>`-tags of your bucket list. Log that to the console.
+
+```Js
+   let elements =  document.createElement("div");
+    document.innerHTML = elements;
+    console.log(elements);
+         
+```
+
 
 4. In order to set the `innerHTML` of an element we need to create a string that contains the HTML code that we want to add to the DOM. It can look something like this:
 
    ```js
    "<div>This is a div element as a string</div>";
+
+   const item = document.createElement("p");
+   item.innerText = `Created.`
+   firstBucketListItem.
+   firstBucketListItem.insertAdjacentElement("afterend", item)
+
    ```
 
    Now create that string that contains a new item that you want to add to your bucket list.
 
 5. Set the `innerHTML` of the list with the new item you just created. What happens when you do that?
+   ```js
+
+   
+   ```
 
 6. Comment out that previous line(s) of code and the three items that you had before you should exist again. How can you add that last item and still keep the three other ones? There is a method that is very similar to the `insertAdjecentElement` that will take your HTML string and add it to the list. Try to add your new item to the beginning of the list.
 
