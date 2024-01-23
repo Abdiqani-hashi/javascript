@@ -11,9 +11,12 @@ To get you started you are given a basic template of HTML and CSS code, but this
 1. Create a `<p>` using the `createElement` method. When you have a reference to your new element, change its `innerText` to something that you would like to have on your bucket list, and then append it to the DOM with the `appendChild` method. Where does this element go? How can you get it do be added directly after the already existing `<p>`.
 
 ```js
-   const createElememt = document.createElement("p")
-    createElement.innerText = "I would love to travel around the globe"
-    documen.body.appendChild(createElement)
+const firstBucketListItem = document.createElement("p");
+firstBucketListItem.innerText = 'I would like to travel around the globe';
+document.body.appendChild(firstBucketListItem);
+
+console.log(firstBucketListItem) //This will go after the p tag which is already existed.
+
 
 ```
 
@@ -25,6 +28,13 @@ To get you started you are given a basic template of HTML and CSS code, but this
    - beforeend
 
    Try them out!
+
+```Js
+const item = document.createElement("p");
+item.innerText = `Visit to Japan.`
+
+firstBucketListItem.insertAdjacentElement("afterend", item)
+```
 
 3. `innerHTML` is an interesting property that exists on HTML elements. With that property we can get and set the inner HTML of a HTML element very easy. Try to get _(or do you already have it?)_ the inner HTML from the element that contains all the `<p>`-tags of your bucket list. Log that to the console.
 
